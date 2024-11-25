@@ -1,0 +1,3 @@
+ADD A, B
+SUB C, D
+MUL E, F

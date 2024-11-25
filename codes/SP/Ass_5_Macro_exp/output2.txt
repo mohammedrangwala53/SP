@@ -1,0 +1,26 @@
+
+
+
+START:
+
+    LDA &A
+    ADD &B
+    STA RESULT
+    LDA &X
+    SUB &Y
+    STA RESULT
+    LDA &M
+    MUL &N
+    STA RESULT
+    LDA &M
+    MUL &N
+    STA RESULT
+    HLT
+
+A   .WORD 0
+B   .WORD 0
+X   .WORD 0
+Y   .WORD 0
+M   .WORD 0
+N   .WORD 0
+RESULT .WORD 0

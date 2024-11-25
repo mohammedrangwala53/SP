@@ -1,0 +1,36 @@
+MACRO
+ADD &A, &B
+    LDA &A
+    ADD &B
+    STA RESULT
+MEND
+
+MACRO
+SUB &X, &Y
+    LDA &X
+    SUB &Y
+    STA RESULT
+MEND
+
+MACRO
+MULT &M, &N=2
+    LDA &M
+    MUL &N
+    STA RESULT
+MEND
+
+START:
+
+    ADD A, B
+    SUB X, Y
+    MULT M, N
+
+    HLT
+
+A   .WORD 0
+B   .WORD 0
+X   .WORD 0
+Y   .WORD 0
+M   .WORD 0
+N   .WORD 0
+RESULT .WORD 0

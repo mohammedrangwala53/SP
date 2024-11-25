@@ -1,0 +1,46 @@
+MNT:
+ Name=MUL, PP=2, KP=1, ETVs=1, MDT Ptr=0, KPDTAB Ptr=0, SST Ptr=0
+ 
+ Name=DIV, PP=4, KP=2, ETVs=1, MDT Ptr=3, KPDTAB Ptr=1, SST Ptr=2
+ 
+ Name=MOD, PP=6, KP=3, ETVs=1, MDT Ptr=6, KPDTAB Ptr=2, SST Ptr=4
+ 
+
+PNTAB:
+ &A &B 
+ &X &Y 
+ &M &N 
+
+KPDTAB:
+ &B = 2
+ &Y = 5
+ &N = 3
+
+EVNTAB:
+ &TEMP1 
+ &RESULT 
+ &TEMP_M 
+
+SSTAB:
+MULSTART: 3
+MULSTEP: 4
+DIVSTART: 8
+DIVSTEP: 9
+MODSTART: 13
+MODSTEP: 14
+
+SSNTAB:
+ MULSTART MULSTEP 
+ DIVSTART DIVSTEP 
+ MODSTART MODSTEP 
+
+MDT:
+ LCL (E,1)
+MOV (P,1) (E,1)
+MUL (E,1) (P,2)
+LCL (E,1)
+MOV (P,1) (E,1)
+DIV (E,1) (P,2)
+LCL (E,1)
+MOV (P,1) (E,1)
+MOD (E,1) (P,2)

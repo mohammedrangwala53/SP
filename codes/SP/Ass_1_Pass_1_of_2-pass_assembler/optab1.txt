@@ -1,0 +1,10 @@
+Mnemonic   Opcode
+START      **
+MOVER      04
+ADD        01
+SUB        02
+MOVEM      05
+MULT       03
+DC         *
+DS         *
+END        **

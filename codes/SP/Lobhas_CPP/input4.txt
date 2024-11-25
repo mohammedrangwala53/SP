@@ -1,0 +1,14 @@
+MACRO
+ADD &ARG1, &ARG2
+LDA &ARG1
+STA &ARG2
+MEND
+
+MACRO
+SUB &ARG3, &ARG4
+LDA &ARG3
+STA &ARG4
+MEND
+
+ADD A, B  ; This is a call to the ADD macro
+SUB C, D  ; This is a call to the SUB macro

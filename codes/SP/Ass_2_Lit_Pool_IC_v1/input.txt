@@ -1,0 +1,13 @@
+** START 100
+** LDA ALPHA
+** ADD =5
+** SUB =3
+** MUL BETA
+** JMP LOOP
+ALPHA WORD 10
+BETA RESW 1
+** LTORG **
+** LDA =4
+** LTORG **
+LOOP ** **
+** END **

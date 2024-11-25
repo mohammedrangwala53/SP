@@ -1,0 +1,70 @@
+MNT (Macro Name Table):
++-------+------------+-----------+--------------+-------------+
+| Index | Macro Name | MDT Index | KPDTAB Index | Param Count |
++-------+------------+-----------+--------------+-------------+
+|     1 |        ADD |         0 |            0 |           2 |
+|     2 |        SUB |         3 |            1 |           2 |
+|     3 |       MULT |         6 |            2 |           2 |
+|     4 |        DIV |         9 |            3 |           2 |
++-------+------------+-----------+--------------+-------------+
+
+MDT (Macro Definition Table):
+ADD &B
+STA RESULT
+MEND
+SUB &Y
+STA RESULT
+MEND
+MUL &N
+STA RESULT
+MEND
+DIV &Q
+STA RESULT
+MEND
+
+PNTAB (Parameter Name Table):
+ADD: LDA &A 
+DIV: LDA &D 
+MULT: LDA &M 
+SUB: LDA &X 
+
+KPDTAB (Keyword Parameter Table):
+ADD: 
+DIV: 
+MULT: 
+SUB: 
+
+EVNTAB (Expansion Variable Name Table):
+LDA
+&A
+ADD
+STA
+LDA
+&X
+SUB
+LDA
+&M
+MUL
+LDA
+&D
+DIV
+
+SSNTAB (Sequence Number Table):
+1
+2
+1
+2
+1
+2
+1
+2
+
+SSTAB (Sequence Symbol Table):
+ADD
+STA
+SUB
+STA
+MUL
+STA
+DIV
+STA
